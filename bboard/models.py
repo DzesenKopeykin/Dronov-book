@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class BillBoard(models.Model):
+class Ad(models.Model):
     title = models.CharField(max_length=50, verbose_name="Product")
     content = models.TextField(null=True, blank=True, verbose_name="Description")
     price = models.FloatField(null=True, blank=True, verbose_name="Price")

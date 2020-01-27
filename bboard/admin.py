@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import BillBoard
+from .models import Ad
 
 
-admin.site.register(BillBoard)
+admin.site.register(Ad)

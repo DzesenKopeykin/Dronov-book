@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
-from .models import BillBoard
+from .models import Ad
 
 
 def index(request):
-    billboards = BillBoard.objects.order_by("-published")
-    return render(request, "bboard/index.html", {"billboards": billboards})
+    ads = Ad.objects.order_by("-published")
+    return render(request, "bboard/index.html", {"ads": ads})

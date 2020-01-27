@@ -3,16 +3,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная - Доска объявлений</title>
+    <title>Home - Bulletin Board</title>
 </head>
 <body>
 
-    <h1>Объявления</h1>
-    {% for billboard in billboards %}
+    <h1>Ads</h1>
+    {% for ad in ads %}
     <div>
-        <h2>{{ billboard.title }}</h2>
-        <p>{{ billboard.content }}</p>
-        <p>{{ billboard.published|date:"d.m.Y H:i:s" }}</p>
+        <h2>{{ ad.title }}</h2>
+        <p>{{ ad.content }}</p>
+        <p>{{ ad.published|date:"d.m.Y H:i:s" }}</p>
     </div>
     {% endfor %}
     
