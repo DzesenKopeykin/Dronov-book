@@ -4,5 +4,5 @@ from .models import Ad
 
 
 def index(request):
-    ads = Ad.objects.order_by("-published")
+    ads = Ad.objects.all()
     return render(request, "bboard/index.html", {"ads": ads})
