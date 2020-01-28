@@ -5,7 +5,9 @@ from .models import Ad, Rubric
 
 def index(request):
     ads = Ad.objects.all()
-    return render(request, "bboard/index.html", {"ads": ads})
+    rubrics = Rubric.objects.all()
+    context = {"ads": ads, "rubrics": rubrics}
+    return render(request, "bboard/index.html", context)
 
 
 def by_rubric(request, rubric_id):
