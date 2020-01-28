@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import Ad
+from .models import Ad, Rubric
 
 
 class AdAdmin(admin.ModelAdmin):
@@ -9,3 +9,4 @@ class AdAdmin(admin.ModelAdmin):
     search_fields = ("title", "content", )
 
 admin.site.register(Ad, AdAdmin)
+admin.site.register(Rubric)
