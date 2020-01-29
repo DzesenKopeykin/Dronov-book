@@ -10,6 +10,7 @@
     <h1>Ads</h1>
     <div>
         <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'add' %}">Create Ad</a>
         {% for rubric in rubrics %}
         <a href="{% url 'by_rubric' rubric.pk %}">{{ rubric.name }}</a>
         {% endfor %}
